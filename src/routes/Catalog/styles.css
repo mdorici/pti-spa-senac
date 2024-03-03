@@ -1,0 +1,24 @@
+#spa-catalog-section {
+    padding: 40px 0;
+}
+
+.spa-catalog-main {
+    padding: 0 10px;
+}
+
+.spa-search-bar-container {
+    margin-bottom: 40px;
+}
+
+.spa-catalog-cards-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+}
+
+@media(min-width: 576px){
+    
+    .spa-catalog-main {
+        padding: 0 20px;
+    }
+}

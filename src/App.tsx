@@ -1,9 +1,8 @@
-import './App.css'
+import './index.css';
+import Catalog from './routes/Catalog';
 
-function App() {
+export default function App() {
   return (
-    <h1>PTI Single Page Application - SENAC</h1>
+    <Catalog/>
   );
 }
-
-export default App

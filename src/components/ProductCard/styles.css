@@ -1,0 +1,79 @@
+.card-product {
+    width: calc(85% - 1px);
+    height: calc(40vw - 200px); 
+    margin: 5px;
+    border: 2px solid var(--spa-color-font-primary);
+    border-radius: 10px;
+    background-color: var(--spa-color-font-secondary);
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card-product.selected {
+    background-color: var(--spa-color-font-primary);
+    border-color: var(--spa-color-font-primary);
+  }
+  
+  .card-product.selected .product-name,
+  .card-product.selected .product-price,
+  .card-product.selected .add-button {
+    color: var(--spa-color-font-secondary);
+  }
+  
+  .card-product.selected .add-button {
+    background-color: var(--spa-color-font-secondary);
+    color: var(--spa-color-font-primary);
+  }
+  
+  .product-image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .product-name {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+  }
+  
+  .product-price {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-weight: bold;
+  }
+  
+  .add-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 5px;
+    background-color: var(--spa-color-font-primary);
+    border: none;
+    color: var(--spa-color-font-secondary);
+    font-size: 18px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .add-button::before,
+  .add-button::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .add-button::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
